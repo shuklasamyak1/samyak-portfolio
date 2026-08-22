@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samyak Shukla | Quantitative Economics & Analytics Portfolio</title>
+  <title>Samyak Shukla | Quantitative Economics & Business Analytics</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +34,13 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    .eq-bar {
+      animation: bounce 1.2s ease-in-out infinite alternate;
+    }
+    @keyframes bounce {
+      0% { height: 4px; }
+      100% { height: 16px; }
+    }
   </style>
 </head>
 <body class="min-h-screen selection:bg-indigo-500 selection:text-white antialiased">
@@ -57,20 +64,34 @@
 
     <!-- Hero Section -->
     <section class="space-y-6 pt-8">
-      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel text-xs font-semibold text-indigo-400 border border-indigo-500/20">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        Available for Analytics & Quantitative Roles
+      <div class="flex flex-wrap items-center gap-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel text-xs font-semibold text-indigo-400 border border-indigo-500/20">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Available for Analytics & Quantitative Roles
+        </div>
+
+        <!-- Music / Vibe Pill -->
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel text-xs font-medium text-gray-400 border border-gray-800">
+          <div class="flex items-end gap-0.5 h-3">
+            <span class="eq-bar w-0.5 bg-indigo-400" style="animation-delay: 0.1s;"></span>
+            <span class="eq-bar w-0.5 bg-indigo-400" style="animation-delay: 0.3s;"></span>
+            <span class="eq-bar w-0.5 bg-indigo-400" style="animation-delay: 0.2s;"></span>
+            <span class="eq-bar w-0.5 bg-indigo-400" style="animation-delay: 0.4s;"></span>
+          </div>
+          <span>Deep Focus & Lo-Fi Beats</span>
+        </div>
       </div>
+
       <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
         Quantitative Economics & <br />
-        <span class="gradient-text">Operations Research Specialist</span>
+        <span class="gradient-text">Business Decision Analytics</span>
       </h1>
       <p class="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed">
-        Formulating prescriptive Mixed-Integer Linear Programs (MILP), stochastic Monte Carlo tail-risk engines, and scalable relational data systems to solve high-impact supply chain and financial business bottlenecks.
+        Formulating prescriptive optimization engines, stochastic Monte Carlo risk distributions, and relational data schemas to solve high-impact supply chain and commercial business bottlenecks.
       </p>
       <div class="flex flex-wrap items-center gap-4 pt-4">
         <a href="#projects" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition shadow-lg shadow-indigo-600/30">
-          View Decision Engines
+          Explore Projects
         </a>
         <a href="https://linkedin.com/in/samyak-shukla" target="_blank" class="px-6 py-3 rounded-xl glass-panel text-gray-300 hover:text-white hover:border-gray-600 font-semibold transition">
           LinkedIn Profile
@@ -90,10 +111,10 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- Project 1: Autonomous Sourcing Solver (NEW) -->
+        <!-- Project 1: Autonomous Sourcing Solver -->
         <div class="glass-card rounded-2xl overflow-hidden flex flex-col border border-indigo-500/30">
           <div class="p-6 space-y-4 flex-1 flex flex-col">
-            <div class="text-xs font-bold uppercase tracking-wider text-indigo-400">Operations Research & MILP</div>
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-400">Prescriptive Analytics & MILP</div>
             <h3 class="text-xl font-bold text-white leading-snug">Autonomous Sourcing & Disruption Solver</h3>
             <p class="text-gray-400 text-sm leading-relaxed flex-1">
               Prescriptive Operations Research engine using Mixed-Integer Linear Programming (MILP) to optimize global sourcing under capacity, SLA, and Scope-3 carbon limits. Integrates a 1,000-trial Monte Carlo simulation for tail risk (VaR₉₅), dual shadow pricing, and Pareto frontier trade-off modeling.
@@ -159,8 +180,8 @@
     <!-- Technical Competencies Section -->
     <section id="skills" class="space-y-10">
       <div class="border-b border-gray-800 pb-4">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Technical & Quantitative Competencies</h2>
-        <p class="text-gray-400 text-sm mt-1">Core proficiencies across mathematical optimization, risk modeling, and data engineering.</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Technical & Analytics Competencies</h2>
+        <p class="text-gray-400 text-sm mt-1">Core proficiencies across business optimization, quantitative risk modeling, and data engineering.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -169,12 +190,12 @@
         <div class="glass-panel p-6 rounded-2xl space-y-4">
           <h3 class="text-base font-bold text-white uppercase tracking-wider flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span>
-            Optimization & OR
+            Optimization & Decision Engines
           </h3>
           <ul class="text-sm text-gray-400 space-y-2.5">
             <li>Mixed-Integer Linear Programming (MILP)</li>
             <li>PuLP (COIN-OR CBC Solver)</li>
-            <li>Dual Shadow Pricing (Lagrange Multipliers)</li>
+            <li>Dual Shadow Pricing (Marginal Returns)</li>
             <li>Multi-Objective Pareto Frontiers (ε-Constraint)</li>
             <li>Capacity Bottleneck Economics</li>
           </ul>
@@ -184,7 +205,7 @@
         <div class="glass-panel p-6 rounded-2xl space-y-4">
           <h3 class="text-base font-bold text-white uppercase tracking-wider flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span>
-            Risk & Econometrics
+            Risk & Quantitative Modeling
           </h3>
           <ul class="text-sm text-gray-400 space-y-2.5">
             <li>Stochastic Monte Carlo Simulations</li>
@@ -199,14 +220,14 @@
         <div class="glass-panel p-6 rounded-2xl space-y-4">
           <h3 class="text-base font-bold text-white uppercase tracking-wider flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-            Data Stack & BI
+            Business Intelligence & Stack
           </h3>
           <ul class="text-sm text-gray-400 space-y-2.5">
             <li>Python (NumPy, Pandas, PuLP)</li>
             <li>Streamlit & Plotly Interactive Deployments</li>
             <li>PostgreSQL & Star Schema Modeling</li>
             <li>Microsoft Power BI & Complex DAX</li>
-            <li>Scope-3 ESG Procurement Optimization</li>
+            <li>Scope-3 ESG Procurement Analytics</li>
           </ul>
         </div>
 
