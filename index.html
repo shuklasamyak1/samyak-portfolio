@@ -155,28 +155,49 @@
           </div>
         </div>
 
-        <!-- Project 3: B2B SaaS Revenue Engine -->
-        <div class="glass-card rounded-2xl overflow-hidden flex flex-col">
-          <div class="p-6 space-y-4 flex-1 flex flex-col">
-            <div class="text-xs font-bold uppercase tracking-wider text-emerald-400">Financial BI & Data Modeling</div>
-            <h3 class="text-xl font-bold text-white leading-snug">B2B SaaS Revenue & Retention Engine</h3>
-            <p class="text-gray-400 text-sm leading-relaxed flex-1">
-              Architected a star-schema relational model over a €49K ARR subscription portfolio. Engineered complex DAX measures (filter contexts, cohort retention, and active MRR movements) to analyze customer lifetime value and churn drivers.
-            </p>
-            <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="px-2.5 py-1 rounded-md bg-emerald-950/60 text-emerald-300 text-xs font-medium border border-emerald-800/40">PostgreSQL</span>
-              <span class="px-2.5 py-1 rounded-md bg-emerald-950/60 text-emerald-300 text-xs font-medium border border-emerald-800/40">Power BI</span>
-              <span class="px-2.5 py-1 rounded-md bg-emerald-950/60 text-emerald-300 text-xs font-medium border border-emerald-800/40">Advanced DAX</span>
-              <span class="px-2.5 py-1 rounded-md bg-emerald-950/60 text-emerald-300 text-xs font-medium border border-emerald-800/40">Star Schema</span>
-            </div>
-          </div>
-          <div class="p-6 pt-0 flex items-center justify-end border-t border-gray-800/50 mt-auto bg-gray-900/20">
-            <a href="https://github.com/shuklasamyak1/b2b-saas-retention-dashboard" target="_blank" class="text-sm font-semibold text-gray-400 hover:text-white transition">GitHub Repo →</a>
-          </div>
-        </div>
+       <!-- Project 3: B2B SaaS Decision Engine Card -->
+<div class="project-card">
+  <div class="project-header">
+    <div class="badge-stack">
+      <span class="badge">Prescriptive AI</span>
+      <span class="badge">Operations Research</span>
+    </div>
+    <h3 class="project-title">B2B SaaS Predictive Retention &amp; CLV Decision Engine</h3>
+    <p class="project-subtitle">
+      Python (Gradient Boosting, PuLP MILP) • PostgreSQL • Microsoft Power BI • DAX • Streamlit
+    </p>
+  </div>
 
-      </div>
-    </section>
+  <p class="project-description">
+    An enterprise-grade Customer RevOps decision system combining a PostgreSQL relational star schema, 
+    Gradient Boosting churn risk classification, dynamic CLV estimation, and a PuLP Knapsack MILP solver. 
+    Autonomously optimizes account-level retention interventions to maximize preserved ARR and campaign ROI under fixed marketing budgets.
+  </p>
+
+  <div class="project-metrics-strip">
+    <div class="metric-pill">
+      <span class="metric-label">Scope</span>
+      <span class="metric-value">€49K ARR</span>
+    </div>
+    <div class="metric-pill">
+      <span class="metric-label">Optimization</span>
+      <span class="metric-value">Knapsack MILP</span>
+    </div>
+    <div class="metric-pill">
+      <span class="metric-label">Predictive Engine</span>
+      <span class="metric-value">Gradient Boosting</span>
+    </div>
+  </div>
+
+  <div class="project-links">
+    <a href="https://b2b-saas-retention-dashboard-u8f2lyqeyovxzcpa6wnutz.streamlit.app/" target="_blank" class="btn btn-primary">
+       Live Engine
+    </a>
+    <a href="https://github.com/shuklasamyak1/b2b-saas-retention-dashboard" target="_blank" class="btn btn-secondary">
+      Source Code
+    </a>
+  </div>
+</div>
 
     <!-- Technical Competencies Section -->
     <section id="skills" class="space-y-10">
